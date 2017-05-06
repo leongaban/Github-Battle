@@ -10,7 +10,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				Hell World!
+				Hell World! Wasabi Sauce!
 			</div>
 		)
 	}
