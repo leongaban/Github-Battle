@@ -36,10 +36,7 @@ export default class Popular extends React.Component {
 	}
 
 	componentDidMount() {
-		api.getPopularRepos(this.state.selectedLanguage)
-			.then((repos) => {
-				console.log(repos);
-			});
+		this.updateLanguage(this.state.selectedLanguage);
 	}
 
 	updateLanguage(lang) {
@@ -48,6 +45,11 @@ export default class Popular extends React.Component {
 				selectedLanguage: lang
 			}
 		});
+
+		api.getPopularRepos(lang)
+			.then((repos) => {
+				console.log(repos);
+			});
 	}
 
 	render() {
