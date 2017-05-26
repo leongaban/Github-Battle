@@ -61,17 +61,11 @@ a {
 	font-size: 20px;
 }
 
-.nav {
-	display: flex;
-}
+.nav { display: flex; }
 
-.nav li {
-	margin-right: 15px;
-}
+.nav li { margin-right: 15px; }
 
-.active {
-	font-weight: bold;
-}
+.active { font-weight: bold; }
 
 .home-container {
 	display: flex;
@@ -90,14 +84,12 @@ a {
 	padding: 15px 0;
 	margin: 10px auto;
 	background: #0a0a0a;
-	/*background: linear-gradient(#0a0a0a, #0a0a0a);*/
 	-webkit-transition: background .2s ease-in-out;
 	transition: background .2s ease-in-out;
 }
 
 .button:hover:enabled {
 	color: #fff;
-	/*background: linear-gradient(#0a0a0a, #3C3C3C);*/
 	background: #3C3C3C;
 	text-decoration: none;
 }
