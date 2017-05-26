@@ -7,13 +7,13 @@ function SelectLanguage (props) {
 		<ul className="languagues">
 			{languagues.map((lang) => {
 				return (
-					<li key={lang}
-						style={lang === props.selectedLanguage ? { color: '#d0021b' } : null }
+					<li key={ lang }
+						style={ lang === props.selectedLanguage ? { color: '#d0021b' } : null }
 						onClick={ props.onSelect.bind(null, lang) }>
 						{lang}
 					</li>
 				)
-			})}	
+			})}
 		</ul>
 	)
 }
@@ -37,7 +37,7 @@ export default class Popular extends React.Component {
 			return {
 				selectedLanguage: lang
 			}
-		})
+		});
 	}
 
 	render() {
