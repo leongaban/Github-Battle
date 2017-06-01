@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import * as api from  '../utils/api'
+import Loading from './loading'
 
 function SelectLanguage(props) {
 	const languagues = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python'];
@@ -90,10 +91,7 @@ export default class Popular extends React.Component {
 					selectedLanguage={ this.state.selectedLanguage }
 					onSelect={ this.updateLanguage } />
 				{ !this.state.repos 
-					? <p className="text-center">
-						<img src="https://githubbattle.now.sh/imgs/animal.gif"/><br/>
-						Loading...
-					  </p>
+					? <Loading/>
 					: <RepoGrid repos={ this.state.repos } /> }
 			</div>
 		)
