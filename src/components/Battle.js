@@ -11,7 +11,7 @@ function PlayerPreview(props) {
 			</div>
 			<button
 				className="reset"
-				onClick={ () => props.onreset(props.id) }>
+				onClick={ () => props.onReset(props.id) }>
 				Reset
 			</button>
 		</div>
