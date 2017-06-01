@@ -1,5 +1,4 @@
 body {
-	/*background: green;*/
 	font-family: -apple-system, BlnkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
 
@@ -7,20 +6,11 @@ ul { padding: 0; }
 
 li { list-style: none; }
 
-a { 
-	text-decoration: none;
-	color: #d0021b;
-}
+a { text-decoration: none; color: #d0021b; }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
+.container { max-width: 1200px; margin: 0 auto; }
 
-.row {
-	display: flex;
-	justify-content: space-around;
-}
+.row { display: flex; justify-content: space-around; }
 
 .column {
 	display: flex;
@@ -38,61 +28,27 @@ a {
 	width: 80%;
 }
 
-.column label {
-	text-align: center;
-	font-size: 30px;
-	font-weight: 200;
-}
+.column label { text-align: center; font-size: 30px; font-weight: 200; }
 
-.header {
-	text-align: center;
-	font-size: 30px;
-	font-weight: 200;
-}
+.header { text-align: center; font-size: 30px; font-weight: 200; }
 
-.github-logo {
-	margin: 0 auto;
-}
+.github-logo { margin: 0 auto; }
 
-.github-logo img {
-	width: 180px;	
-}
+.github-logo img { width: 180px; }
 
-.languagues {
-	display: flex;
-	justify-content: center;
-}
+.languagues { display: flex; justify-content: center; }
 
-.languagues li {
-	margin: 10px;
-	font-weight: bold;
-	cursor: pointer;
-}
+.languagues li { margin: 10px; font-weight: bold; cursor: pointer; }
 
-.popular-list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
+.popular-list { display: flex; flex-wrap: wrap; justify-content: space-around; }
 
-.popular-item {
-	margin: 20px;
-	text-align: center;
-}
+.popular-item { margin: 20px; text-align: center; }
 
-.space-list-items {
-	margin-bottom: 7px;
-}
+.space-list-items { margin-bottom: 7px; }
 
-.avatar {
-	width: 150px;
-	border-radius: 50%;
-}
+.avatar { width: 150px; border-radius: 50%; }
 
-.popular-rank {
-	margin: 10px;
-	font-size: 20px;
-}
+.popular-rank { margin: 10px; font-size: 20px; }
 
 .nav { display: flex; }
 
@@ -100,11 +56,18 @@ a {
 
 .active { font-weight: bold; }
 
-.home-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.reset {
+	border: none;
+	background: transparent;
+	color: #d0021b;
+	display: block;
+	width: 100%;
+	text-align: center;
 }
+
+.reset:hover { cursor: pointer; }
+
+.home-container { display: flex; flex-direction: column; align-items: center; }
 
 .button {
 	color: #e6e6e6;
@@ -121,11 +84,7 @@ a {
 	transition: background .2s ease-in-out;
 }
 
-.button:hover:enabled {
-	color: #fff;
-	background: #3C3C3C;
-	text-decoration: none;
-}
+.button:hover:enabled { color: #fff; background: #3C3C3C; text-decoration: none; }
 
 .button:active {
  	transform: translateY(1px);
